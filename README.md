@@ -6,6 +6,12 @@ This is a movie recommendation system built using Flask and PySpark. It recommen
 The purpose of this project is to provide users with personalized movie recommendations based on their preferred genre and release year.
 
 ## Setup
+
+Before getting started download the datasets from kaggle.
+```
+https://www.kaggle.com/datasets/rounakbanik/the-movies-dataset
+```
+
 1. Clone the repository:
 
    ```
@@ -17,20 +23,25 @@ The purpose of this project is to provide users with personalized movie recommen
    ```
    cd Movie-Recommendation-System
    ```
+   Create a folder 'datasets' and extract your kaggle movie datasets into this 'datasets' folder
+   ```
+   mkdir datasets
+   ```
+   Make sure to extract your datasets to work without error
 
-3. Install dependencies:
+4. Install dependencies:
 
    ```
    pip install -r requirements.txt
    ```
 
-4. Ensure the following datasets are available in the specified directory:
+5. Ensure the following datasets are available in the specified directory:
 
    - `rating.csv`: Contains user ratings for movies.
    - `movie.csv`: Includes movie titles, genres, and other details.
    - `tag.csv`: Consists of movie tags and timestamps.
 
-5. Run the application:
+6. Run the application:
 
    ```
    python app.py
